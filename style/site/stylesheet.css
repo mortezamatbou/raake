@@ -1,0 +1,479 @@
+
+@font-face {
+    font-family: droid;
+    src: url(DroidNaskh-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: sans;
+    src: url(IRANSansWeb_Light.woff2) format("woff");
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: tahoma;
+    font-size: 10px;
+    direction: rtl;
+}
+
+.panel-nav {
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+}
+.panel-nav a {
+    padding: 10px;
+    background-color: rgba(0,0,0, .2);
+    padding: 10px;
+    margin: 0px;
+    float: right;
+    text-decoration: none;
+    color: white;
+}
+.panel-nav a:hover {
+    background-color: rgba(250,250,250, .2);
+}
+
+table {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+table tr:nth-child(odd) {
+    background-color: rgba(0,0,0, .2);
+}
+
+#cover-screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    background-position: center center;
+    background-size: cover;
+}
+#cover-screen2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0, .95);
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+#loading {
+    z-index: 1000;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0, .95);
+    position: absolute; border-radius: 5px;
+    text-align: center;
+    display: none;
+    top: 0px;
+    left: 0px;
+}
+#loading-icon {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+    background-color: rgba(150,0,0, .0);
+    z-index: 1003;
+    display: none;
+}
+#operation-message-ok, #operation-message-bad {
+    display: none;
+}
+.login {
+    width: 300px;
+    margin: 0px auto;
+}
+fieldset {
+    border: 1px solid black;
+    box-shadow: none;
+    background-color: rgba(0,0,0, .8);
+}
+
+input[type=email],input[type=password] {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    color: black;
+    background-color: rgba(250,250,250, .8);
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0, .2);
+    font-size: 15px;
+    border-radius: 5px;
+}
+#button {
+    background-color: #286090;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: #286070;
+}
+
+
+
+h1 {
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 0px;
+    font-size: 15px;
+    background-color: rgba(0,0,0, .02);
+}
+
+.nav-message {
+    width: 100%;
+    padding-top: 5px;
+    margin: 0px;
+    background-color: rgba(150,0,0, .8);
+    direction: ltr;
+    text-align: center;
+    color: black;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1001;
+}
+.nav-message span {
+    padding: 10px 10px;
+    margin-right: 5px;
+    color: white;
+    
+    display: inline-block;
+    position: relative;
+}
+.nav-message span b {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px 5px;
+    color: white;
+}
+.nav-message span:hover {
+    color: black;
+}
+.nav-message span a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* ************************** Comment ******************* */
+
+
+.comment {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+.comment table {
+    font-size: 12px;
+    width: 100%;
+}
+.comment section {
+    
+}
+.comment div, .comment section, .comment article, .comment header, .comment footer {
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+.comment h3 {
+    background-color: rgba(0,0,0, .8);
+    color: white;
+    padding: 10px 5px;
+    margin: 0px;
+    font-size: 12px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.comment-author {
+    position: relative;
+    transition: background-color .2s linear;
+    padding: 5px;
+}
+.comment-author .comment-titr {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    border: 1px solid rgba(0,0,0, .5);
+}
+.info {
+    cursor: help;
+}
+.comment-author-content {
+    border-right: 2px solid rgba(200,0,0, .8);
+}
+
+.comment-info {
+    
+}
+
+.comment-info-item {
+    border: 1px solid black;
+}
+.comment-info-item-content {
+    border-radius: 5px;
+}
+
+pre, code {
+    direction: ltr;
+}
+
+.comment-tools {
+    text-align: left;
+}
+.comment-tools a {
+    font-size: 10px;
+}
+
+.comment-navbar {
+    
+}
+
+.left-tools {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    background-color: white;
+    z-index: 500;
+    opacity: .5;
+    transition: opacity .1s linear;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 10px;
+    font-size: 10px;
+    border: 1px solid black;
+}
+.left-tools select {
+    font-size: 12px;
+    
+}
+.left-tools button {
+    cursor: pointer;
+    margin: 2px 5px;
+    width: 50px;
+}
+
+
+#comment-response {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0, .8);
+    color: white;
+    display: none;
+    z-index: 1500;
+    overflow-y: auto;
+}
+#close-comment-response {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    background-color: rgba(0,0,0, .9);
+    color: white;
+    z-index: 1501;
+    box-shadow: 0px 0px 5px white;
+    padding: 10px;
+    cursor: pointer;
+}
+#comment-text-box {
+    
+}
+#comment-text {
+    resize: none; height: 200px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+}
+#comment-text-bar {
+    width: 100%;
+    direction: ltr;
+    text-align: left;
+    border: 1px solid rgba(0,0,0, .05);
+    border-radius: 2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#comment-text-bar span {
+    padding: 5px 10px;
+    margin: 5px;
+    box-shadow: 0px 0px 1px black;
+    background-color: rgba(250,250,250, .9);
+    color: black;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: tahoma, sans-serif, cursive;
+    transition: background-color .1s linear;
+}
+#comment-text-bar span:hover {
+    background-color: rgba(0,0,0, .8);
+    color: white;
+}
+
+
+/**
+*
+* PANEL -> EDIT SECTION -> TAGS
+*
+*/
+
+#article-tag span {
+    border: 1px solid rgba(100,0,0, .8);
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(200,0,0, .8);
+    border-radius: 2px;
+    display: inline-block;
+}
+#article-tag span:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+/**
+*
+* PANEL -> ARTICLES
+*
+*/
+
+.nav-section {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 2px rgba(0,0,0, .1);
+    display: inline-block;
+    
+}
+
+
+
+.nav-section a {
+    color: white;
+    padding: 0px;
+    background-color: #269abc;
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+}
+.nav-section a:hover {
+    background-color: #222;
+}
+
+/**
+*
+* PANEL -> CATEGORYS
+*
+*/
+
+.category-wrapper {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 4px rgba(0,0,0, .3);
+}
+
+.category-wrapper table {
+    border: none;
+    text-align: center;
+}
+
+.category-wrapper table tr td {
+    padding: 5px 0px;
+}
+
+#message-category {
+    
+}
+
+/**
+*
+* PANEL -> TAGS
+*
+*/
+
+.tag-wrapper {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 4px rgba(0,0,0, .3);
+}
+
+.tag-wrapper table {
+    border: none;
+    text-align: center;
+}
+
+.tag-wrapper table tr td {
+    padding: 5px 0px;
+}
+
+#message-tag {
+    
+}
+
+/**
+*
+* PANEL -> TUTORIALS
+*
+*/
+
+.tutorial-wrapper {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 4px rgba(0,0,0, .3);
+}
+
+.tutorial-wrapper table {
+    border: none;
+    text-align: center;
+}
+
+.tutorial-wrapper table tr td {
+    padding: 5px 0px;
+}
+
+#message-tutorial {
+    
+}
+
+
+
+
+
+
